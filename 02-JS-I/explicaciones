@@ -1,0 +1,12 @@
+Variables: una variable vendria a ser como una cajita donde guardamos algo que queremos usar mas adelante
+puede ser cualquier cosa (tipo), lo que sea.
+
+string= son las cadenas de texto, una oracion como por ejemplo: "juan juega a la pelota" seria una string
+
+funciones (argumentos):
+
+declaraciones (if): es un condicional con una declaracion la cual si se cumple da lugar a la accion estipulada
+si 2 + 2 = 4 esta bien, if (2 + 2 = 4) {return "it's ok";}
+
+valores booleanos (false, true): son valores que solo pueden ser verdadero o falso, si o no,
+son blanco o negro.
