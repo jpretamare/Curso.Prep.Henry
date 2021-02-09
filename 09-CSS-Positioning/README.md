@@ -42,7 +42,7 @@ Hay dos tipos de elementos "display" ya incluidos en HTML; "block" e "inline",
 
 ### Elementos "block"
 
-Un elemento "block" siempre arrancará en una nueva línea, y siempre tomará el ancho máximo del contenedor en el cual se encuentre. ¿Recuerdas que en la lección anterior aprendimos que el elemento `<p>` siempre empieza en una nueva línea? Es porque es un elemento "block", como también lo son los `div` y los `<h1-6>`.
+Un elemento "block" siempre arrancará en una nueva línea, y siempre tomará el ancho máximo del contenedor en el cual se encuentre. ¿Recuerdas que en la lección a  nterior aprendimos que el elemento `<p>` siempre empieza en una nueva línea? Es porque es un elemento "block", como también lo son los `div` y los `<h1-6>`.
 
 ### Elementos "inline"
 
