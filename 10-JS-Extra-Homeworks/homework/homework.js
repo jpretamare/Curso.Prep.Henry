@@ -70,14 +70,19 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
-  //var cad= []
+  
+  var cad= []
+  
+  //modelo 1.0
   //for (x=0; x<cadena.length; x++){
     //if (cadena[x] !== "a" && cadena[x] !== 'b' && cadena[x] !== 'c') {
       //cad.push(cadena[x]);
     //}
   //}
   //return cad.join('');
-  var cad = []
+
+  //modelo  1.1
+
   for (x=0; x< cadena.length; x++) {
     cad.push(cadena[x]);
   }
