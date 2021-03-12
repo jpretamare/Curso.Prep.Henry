@@ -25,18 +25,22 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
-  i = 0; sum = 0; do (sum += numeros[i], i++); while (i < numeros.length);cb(sum);
-}
+  //modelo 1.0
+  //i = 0; sum = 0; do (sum += numeros[i], i++); while (i < numeros.length);cb(sum);
+  //modelo 1.1
+  cb(numeros.reduce(function (total, ele) {return total +=ele; }))
+  }
 
 function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
-  for (i = 0; i< array.length; i++) {
-    let element = array[i]
-    cb(element)
-  }
-  }
+  //for (i = 0; i< array.length; i++) {
+  //  let element = array[i]
+  //  cb(element)
+  //}
+  array.forEach ((array) => { cb(array);})
+}
 
 function map(array, cb) {
   // Crea un nuevo array
