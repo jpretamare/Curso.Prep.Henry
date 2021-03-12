@@ -35,10 +35,12 @@ function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
+  //modelo 1.0
   //for (i = 0; i< array.length; i++) {
   //  let element = array[i]
   //  cb(element)
   //}
+  //modelo 1.1
   array.forEach ((array) => { cb(array);})
 }
 
@@ -47,8 +49,10 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
+  //modelo 1.0
   //nuevo = [];
   //for (i=0; i <array.length; i++) {let elem = array[i];cb(elem);nuevo.push(cb(elem));}return nuevo;}
+  //modelo 1.1
   var nuevo = array.map(function (el) {
     return cb(el);
   })
@@ -59,6 +63,7 @@ function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
+  //modelo 1.0
   nue = []
   for (i=0; i < array.length; i++)
     if (array[i][0] === "a") {nue.push(array[i])}; return nue;
