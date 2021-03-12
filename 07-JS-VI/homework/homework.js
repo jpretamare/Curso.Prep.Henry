@@ -30,7 +30,7 @@ function sumarArray(numeros, cb) {
   //modelo 1.0
   //i = 0; sum = 0; do (sum += numeros[i], i++); while (i < numeros.length);cb(sum);
   //modelo 1.1
-  cb(numeros.reduce(function (total, ele) {return total +=ele; }))
+  cb(numeros.reduce((total, ele) => {return total +=ele; }))
   }
 
 function forEach(array, cb) {
@@ -55,9 +55,7 @@ function map(array, cb) {
   //nuevo = [];
   //for (i=0; i <array.length; i++) {let elem = array[i];cb(elem);nuevo.push(cb(elem));}return nuevo;}
   //modelo 1.1
-  var nuevo = array.map(function (el) {
-    return cb(el);
-  })
+  var nuevo = array.map(function (el) {return cb(el);})
   return nuevo;
 }
 
@@ -66,9 +64,12 @@ function filter(array) {
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
   //modelo 1.0
-  nue = []
-  for (i=0; i < array.length; i++)
-    if (array[i][0] === "a") {nue.push(array[i])}; return nue;
+  //nue = []
+  //for (i=0; i < array.length; i++)
+  //  if (array[i][0] === "a") {nue.push(array[i])}; return nue;
+  //modelos 1.1
+  var nue = array.filter(palabra => palabra[0] === "a");
+  return nue;  
 }
 
 // No modificar nada debajo de esta línea
