@@ -21,8 +21,12 @@ function numberOfCharacters(string) {
   //La función recibe un string. Recorre el srting y devuelve el caracter con el número de veces que aparece 
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
-  //Escribe tu código aquí  
-  
+  //Escribe tu código aquí 
+  var ob = {}
+    for (let i in string){
+        ob[string[i]] = (ob[string[i]] || 0)+1;
+    }
+    return ob;
 }
 
 
@@ -106,6 +110,7 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+  //modelo 1.0
   var nuevo = [];
   if (arreglo1.length > arreglo2.length){
   for (let y in arreglo1) {

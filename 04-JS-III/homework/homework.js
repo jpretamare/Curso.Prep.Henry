@@ -226,7 +226,7 @@ function continueStatement(numero) {
     continue;
     }
     else {
-    sum = sum + 2;
+    sum = sum+2;
     list.push(sum);
   }}
   return list;

@@ -52,7 +52,7 @@ function map(array, cb) {
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
   //modelo 1.0
-  //nuevo = [];
+  //var nuevo = [];
   //for (i=0; i <array.length; i++) {let elem = array[i];cb(elem);nuevo.push(cb(elem));}return nuevo;}
   //modelo 1.1
   var nuevo = array.map(function (el) {return cb(el);})
